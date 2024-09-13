@@ -32,7 +32,7 @@ filters.command("start")
 async def start_command(client, message: Message):
   await message.reply_photo(
                             photo = f"https://graph.org/file/9af2ab50bbc3438764851.jpg",
-                            caption = f"This is a music downloader bot, to download music use command /downloadmusic. Powered by @UnkNown.",
+                            caption = f"ʜᴇʏ, ᴛʜɪs ɪs ᴀ sɪᴍᴘʟᴇ Music Player ʙᴏᴛ ᴡʜɪᴄʜ ɪs ʙᴀsᴇᴅ ᴏɴ ᴘʏʀᴏɢʀᴀᴍ ʟɪʙʀᴀʀʏ ᴛᴏ download ᴏʀ play music on a group voice chat. \n\nAdd me in a group as admin to be able do download songs for you\n\nᴛʏᴘᴇ /downloadmusic to download your song..",
   reply_markup=InlineKeyboardMarkup(
             [
                 [
