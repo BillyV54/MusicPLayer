@@ -7,7 +7,7 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <img src="https://readme-typing-svg.herokuapp.com?color=FF0085&width=620&lines=🍁+☃️+𝗣𝗢𝗪𝗘𝗥𝗘𝗗+𝗕𝗬+𝐓𝐍𝐖+☃️+🍁"></b></h3>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<h1 align="center"><b>[𝐓𝐇𝐄 𝐓𝐍𝐖](https://imgur.com/a/mNhCuIH)</b></h1>
+<h1 align="center"><b>[THE MUSIC DOWNLOADER KING](https://imgur.com/a/mNhCuIH)</b></h1>
 <img src="https://imgur.com/a/mNhCuIH">
 
 
