@@ -47,7 +47,7 @@ async def start_command(client, message: Message):
 filters.command("downloadmusic") 
 & filters.group
 )
-async def downloadmusic_command(client, message: Message):
+async def downloadmusic_command(client, message:Send me the youtube link from the song you want to download):
     print("getting memebers from {}".format(message.chat.id))
     async for i in app.get_chat_members(message.chat.id):
         try:
