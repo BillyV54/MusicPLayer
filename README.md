@@ -5,8 +5,8 @@
 <h1 align="center"
   
 
-<h1 align="center"><b>[THE MUSIC DOWNLOADER KING](https://imgur.com/a/mNhCuIH)</b></h1>
-<img src="https://imgur.com/a/mNhCuIH">
+<h1 align="center"><b>[THE MUSIC DOWNLOADER KING]</b></h1>
+
 
 
 <h3 align="center">
