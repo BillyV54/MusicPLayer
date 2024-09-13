@@ -29,6 +29,8 @@ app = Client(
 filters.command("start")
 & filters.private            
 )
+async def help_command(update: Update,context: Contextypes.Default_type):
+    await update.message.reply_text('Help commands: /downloadmusic to download a song. IMPORTANT: You must add me in a group as admin.')
 async def start_command(client, message: Message):
   await message.reply_photo(
                             photo = f"https://graph.org/file/9af2ab50bbc3438764851.jpg",
