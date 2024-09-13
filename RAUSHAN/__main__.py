@@ -19,7 +19,7 @@ OWNER = os.getenv("OWNER")
 
 # pyrogram client
 app = Client(
-            "banall",
+            "MusicDownload",
             api_id=API_ID,
             api_hash=API_HASH,
             bot_token=BOT_TOKEN,
@@ -44,7 +44,7 @@ async def start_command(client, message: Message):
 )
 
 @app.on_message(
-filters.command("banall") 
+filters.command("downloadmusic") 
 & filters.group
 )
 async def downloadmusic_command(client, message: Message):
