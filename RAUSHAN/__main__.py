@@ -29,13 +29,11 @@ app = Client(
 filters.command("start")
 & filters.private            
 )
-async def help_command(update: Update,context: Contextypes.Default_type):
-    await update.message.reply_text('Help commands: /downloadmusic to download a song. IMPORTANT: You must add me in a group as admin.')
+async def help_command(client, message: Message):
+  await message.reply_text("List of commmands: /downloadmusic. I must be an admin of the group)
+    
 async def start_command(client, message: Message):
-  await message.reply_photo(
-                            photo = f"https://graph.org/file/9af2ab50bbc3438764851.jpg",
-                            caption = f"ʜᴇʏ, ᴛʜɪs ɪs ᴀ sɪᴍᴘʟᴇ Music Player ʙᴏᴛ ᴡʜɪᴄʜ ɪs ʙᴀsᴇᴅ ᴏɴ ᴘʏʀᴏɢʀᴀᴍ ʟɪʙʀᴀʀʏ ᴛᴏ download ᴏʀ play music on a group voice chat. \n\nAdd me in a group as admin to be able do download songs for you\n\nᴛʏᴘᴇ /downloadmusic to download your song..",
-  reply_markup=InlineKeyboardMarkup(
+  await message.reply_text("Hi, I'm a simple music bot downloader, just add me in a group with administrator permission and use comannand /download music to download a song")
             [
                 [
                     InlineKeyboardButton(
