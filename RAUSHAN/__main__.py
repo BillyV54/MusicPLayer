@@ -31,7 +31,7 @@ filters.command("start")
 )
 async def start_command(client, message: Message):
   await message.reply_photo(
-                            photo = f"https://imgur.com/a/mNhCuIH",
+                            photo = f"https://graph.org/file/9af2ab50bbc3438764851.jpg",
                             caption = f"This is a music downloader bot, to download music use command /downloadmusic. Powered by @UnkNown.",
   reply_markup=InlineKeyboardMarkup(
             [
