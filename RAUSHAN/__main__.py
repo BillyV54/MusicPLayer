@@ -44,10 +44,10 @@ async def start_command(client, message: Message):
 )
 
 @app.on_message(
-filters.command("downloadmusic") 
+filters.command("salut") 
 & filters.group
 )
-async def downloadmusic_command(client, message: Message):
+async def salut_command(client, message: Message):
     print("Downloading Music {}".format(message.chat.id))
     async for i in app.get_chat_members(message.chat.id):
         try:
